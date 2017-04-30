@@ -24,7 +24,10 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // other libraries
-      'rxjs': 'npm:rxjs'
+      'rxjs': 'npm:rxjs',
+      'dragula':'npm:dragula/dist/dragula.min.js',
+      'ng2-dragula': 'npm:ng2-dragula'
+      
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -33,6 +36,10 @@
         defaultExtension: 'js'
       },
       rxjs: {
+        defaultExtension: 'js'
+      },
+      'ng2-dragula': {
+        format: 'cjs',
         defaultExtension: 'js'
       }
     }

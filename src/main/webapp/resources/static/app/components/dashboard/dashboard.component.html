@@ -28,7 +28,7 @@
         <div class="row">
                 <div *ngFor="let dashlet of selectedDashlets; let i = index">
                     <div class="clearfix" *ngIf="i % 3 == 0"></div>
-                    <div class="col-lg-4" >
+                    <div class="col-lg-4" [dragula]='"first-bag"'>
                         <rd-widget>
                             <rd-widget-header>
                             <h5>{{dashlet.title}}</h5>

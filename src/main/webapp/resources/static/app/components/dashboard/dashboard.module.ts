@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 import { CommonModule } from '@angular/common';  
 import { FormsModule } from '@angular/forms';
-
-//import { Draggable } from 'ng2draggable/draggable.directive';
  
+import { DragulaModule} from 'ng2-dragula/ng2-dragula';
+
 import { DashboardComponent } from './dashboard.component.js';
 import { DashboardListComponent } from './dashboard-list.component.js';
 import { AddDashboardComponent } from './dashboard-add.component.js';
@@ -20,6 +20,7 @@ import { DashletService } from './dashlet.service.js';
   imports: [
     CommonModule,
     FormsModule,
+    DragulaModule,
     RouterModule.forChild([
       { path: 'dashboard', component: DashboardComponent },
       { path: 'dashboards', component: DashboardListComponent },
@@ -37,7 +38,6 @@ import { DashletService } from './dashlet.service.js';
     RdWidgetBodyComponent, 
     RdWidgetFooterComponent, 
     RdWidgetHeaderComponent
-//    Draggable
   ],
   providers: [
     DashboardService,

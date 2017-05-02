@@ -27,8 +27,9 @@
 <div  style="padding: 20px 30px" >
     <div class="wrapper wrapper-content">
         <div class="row">
+
             <div *ngFor="let dashlet of selectedDashlets;">
-                <div  class="col-lg-{{dashlet.size}}">
+                <div  class="col-lg-{{dashlet.size}}" [dragula]='"first-bag"'>
                        <rd-widget>
                             <rd-widget-header *ngIf="dashlet.title">
                             <h5>{{dashlet.title}}</h5>

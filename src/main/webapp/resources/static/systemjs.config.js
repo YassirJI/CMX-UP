@@ -27,7 +27,7 @@
       'rxjs': 'npm:rxjs',
       'dragula':'npm:dragula/dist/dragula.min.js',
       'ng2-dragula': 'npm:ng2-dragula'
-      
+      'ng2-charts': 'npm:ng2-charts/bundles/ng2-charts.umd.min.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -40,6 +40,8 @@
       },
       'ng2-dragula': {
         format: 'cjs',
+        defaultExtension: 'js'
+      'ng2-charts': {
         defaultExtension: 'js'
       }
     }

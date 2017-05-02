@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule} from '@angular/router';
 import { CommonModule } from '@angular/common';  
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
  
 import { DragulaModule} from 'ng2-dragula/ng2-dragula';
 
 import { DashboardComponent } from './dashboard.component.js';
 import { DashboardListComponent } from './dashboard-list.component.js';
 import { AddDashboardComponent } from './dashboard-add.component.js';
+import { AddDashletComponent } from './dashlet-add.component.js';
 import { RdWidgetComponent } from '../rd-widget/widget.component.js';
 import { RdWidgetBodyComponent } from '../rd-widget-body/widget-body.component.js';
 import { RdWidgetHeaderComponent } from '../rd-widget-header/widget-header.component.js';
@@ -21,10 +23,12 @@ import { DashletService } from './dashlet.service.js';
     CommonModule,
     FormsModule,
     DragulaModule,
+    ChartsModule,
     RouterModule.forChild([
       { path: 'dashboard', component: DashboardComponent },
       { path: 'dashboards', component: DashboardListComponent },
       { path: 'add-dashboard', component: AddDashboardComponent },
+      { path: 'add-dashlet', component: AddDashletComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
     ])
@@ -32,7 +36,8 @@ import { DashletService } from './dashlet.service.js';
   declarations: [
     DashboardComponent, 
     DashboardListComponent,  
-    AddDashboardComponent,  
+    AddDashboardComponent,
+    AddDashletComponent,  
     DashboardFilterPipe, 
     RdWidgetComponent, 
     RdWidgetBodyComponent, 

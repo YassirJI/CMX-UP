@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResizeEvent} from 'angular-resizable-element';
 
 import { Dashboard } from './dashboard.js';
 import { DashboardService } from './dashboard.service.js';
@@ -49,13 +50,17 @@ export class DashboardComponent implements OnInit {
         
     }
 
+    onResizeEnd(event: ResizeEvent): void {
+        console.log('Element was resized', event.rectangle.width);
+    }
+
     onChangeDashboard(dashboard:Dashboard) {
         this.selectedDashboard = dashboard;
         this.findDashlets(dashboard.id);
-  }
+    }
 
-  findDashlets(dashboardId:number): void {
-    this._dashletService.getDashlets(dashboardId)
+    findDashlets(dashboardId:number): void {
+        this._dashletService.getDashlets(dashboardId)
                     .subscribe(dashlets => this.selectedDashlets = dashlets,
                             error => this.errorMessage = <any>error);
  }

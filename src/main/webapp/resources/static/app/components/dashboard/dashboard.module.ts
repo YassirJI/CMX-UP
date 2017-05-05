@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { AngularDualListBoxModule } from 'angular-dual-listbox';
 import { PopoverModule} from "ngx-popover";
+import { ResizableModule} from 'angular-resizable-element';
 
 import { DashboardComponent } from './dashboard.component.js';
 import { DashboardListComponent } from './dashboard-list.component.js';
@@ -26,6 +27,7 @@ import { DashletService } from './dashlet.service.js';
     ChartsModule,
     AngularDualListBoxModule,
     PopoverModule,
+    ResizableModule,
     RouterModule.forChild([
       { path: 'dashboard', component: DashboardComponent },
       { path: 'dashboards', component: DashboardListComponent },

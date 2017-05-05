@@ -27,6 +27,7 @@
       'rxjs': 'npm:rxjs',
       'ng2-charts': 'npm:ng2-charts/bundles/ng2-charts.umd.min.js',
       'angular-dual-listbox': 'npm:angular-dual-listbox/angular-dual-listbox.bundle.js',
+      'angular-resizable-element':'npm:angular-resizable-element/dist/umd/angular-resizable-element.js',
       'ngx-popover': 'npm:ngx-popover'
     },
     // packages tells the System loader how to load when no filename and/or no extension

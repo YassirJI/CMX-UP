@@ -7,17 +7,17 @@ import { ChartsModule } from 'ng2-charts';
 import { AngularDualListBoxModule } from 'angular-dual-listbox';
 import { PopoverModule} from "ngx-popover";
 
-import { DashboardComponent } from './dashboard.component.js';
-import { DashboardListComponent } from './dashboard-list.component.js';
-import { AddDashboardComponent } from './dashboard-add.component.js';
-import { AddDashletComponent } from './dashlet-add.component.js';
-import { RdWidgetComponent } from '../rd-widget/widget.component.js';
-import { RdWidgetBodyComponent } from '../rd-widget-body/widget-body.component.js';
-import { RdWidgetHeaderComponent } from '../rd-widget-header/widget-header.component.js';
-import { RdWidgetFooterComponent } from '../rd-widget-footer/widget-footer.component.js';
-import { DashboardFilterPipe } from './dashboard-filter.pipe.js';
-import { DashboardService } from './dashboard.service.js';
-import { DashletService } from './dashlet.service.js';
+import { DashboardComponent } from './dashboard.component';
+import { DashboardListComponent } from './dashboard-list.component';
+import { AddDashboardComponent } from './dashboard-add.component';
+import { AddDashletComponent } from './dashlet-add.component';
+import { RdWidgetComponent } from '../rd-widget/widget.component';
+import { RdWidgetBodyComponent } from '../rd-widget-body/widget-body.component';
+import { RdWidgetHeaderComponent } from '../rd-widget-header/widget-header.component';
+import { RdWidgetFooterComponent } from '../rd-widget-footer/widget-footer.component';
+import { DashboardFilterPipe } from './dashboard-filter.pipe';
+import { DashboardService } from './dashboard.service';
+import { DashletService } from './dashlet.service';
 
 @NgModule({
   imports: [

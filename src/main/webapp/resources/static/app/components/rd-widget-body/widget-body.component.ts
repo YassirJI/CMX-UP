@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core';
 
 @Component({
     selector: 'rd-widget-body',
-    templateUrl: 'app/components/rd-widget-body/widget-body.component.html'
+    templateUrl: './widget-body.component.html'
 })
 export class RdWidgetBodyComponent {
     @Input()

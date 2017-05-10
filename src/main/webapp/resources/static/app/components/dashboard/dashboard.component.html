@@ -33,12 +33,16 @@
                             <h5>{{dashlet.title}}</h5>
                             </rd-widget-header>
                             <rd-widget-body>
-                                <div *ngIf="dashlet.category !== 'chart'" [innerHTML]="dashlet.content"></div>
+                                <div *ngIf="!dashlet.category.startsWith('chart',0)"
+                                     [innerHTML]="dashlet.content">
+                                </div>
+
                                 <div *ngIf="dashlet.category === 'chart'" width=325 height=315 style='width:325px;height:315px;margin:0px auto;'>
                                     <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType"
                                                 (chartHover)="chartHovered($event)"
                                                 (chartClick)="chartClicked($event)"></canvas>
                                 </div>
+
                                 <div *ngIf="dashlet.category === 'chart-2'" width=650 height=325 style='width:650px;height:325px;margin:0px auto;'>
                                     <canvas baseChart
                                             [datasets]="barChartData"

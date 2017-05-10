@@ -1,13 +1,13 @@
 import { Component, OnInit }  from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { DashletCategory } from './dashletCategory.js';
-import { DashletService } from './dashlet.service.js';
-import { Dashboard } from './dashboard.js';
-import { DashboardService } from './dashboard.service.js';
+import { DashletCategory } from './dashletCategory';
+import { DashletService } from './dashlet.service';
+import { Dashboard } from './dashboard';
+import { DashboardService } from './dashboard.service';
 
 @Component({
-    templateUrl: './app/components/dashboard/dashlet-add.component.html'
+    templateUrl: './dashlet-add.component.html'
 })
 export class AddDashletComponent {
     

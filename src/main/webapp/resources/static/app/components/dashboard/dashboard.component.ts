@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Dashboard } from './dashboard.js';
-import { DashboardService } from './dashboard.service.js';
+import { Dashboard } from './dashboard';
+import { DashboardService } from './dashboard.service';
 
 
-import { Dashlet } from './dashlet.js';
-import { DashletService } from './dashlet.service.js';
+import { Dashlet } from './dashlet';
+import { DashletService } from './dashlet.service';
 
 @Component({
     selector: 'dashboard',
     styles:[
         '.dropIn { opacity: 0.5;}',
         ],
-    templateUrl: 'app/components/dashboard/dashboard.component.html'
+    templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
     public columnCounter : number = 0;

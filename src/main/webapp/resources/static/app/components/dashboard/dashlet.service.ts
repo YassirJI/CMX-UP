@@ -7,8 +7,8 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/throw';
 
-import { Dashlet } from './dashlet.js';
-import { DashletCategory } from './dashletCategory.js';
+import { Dashlet } from './dashlet';
+import { DashletCategory } from './dashletCategory';
 
 @Injectable()
 export class DashletService {

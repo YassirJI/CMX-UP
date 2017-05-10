@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { AppComponent }  from './app.component.js';
-import { DashboardModule } from './components/dashboard/dashboard.module.js';
+import { AppComponent }  from './app.component';
+import { DashboardModule } from './components/dashboard/dashboard.module';
 
 @NgModule({
   imports: [
@@ -16,6 +16,7 @@ import { DashboardModule } from './components/dashboard/dashboard.module.js';
   declarations: [
     AppComponent
   ],
+  
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

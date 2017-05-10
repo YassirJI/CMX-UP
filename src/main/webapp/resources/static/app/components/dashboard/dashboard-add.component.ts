@@ -1,11 +1,11 @@
 import { Component, OnInit }  from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { Dashboard } from './dashboard.js';
-import { DashboardService } from './dashboard.service.js';
+import { Dashboard } from './dashboard';
+import { DashboardService } from './dashboard.service';
 
 @Component({
-    templateUrl: './app/components/dashboard/dashboard-add.component.html'
+    templateUrl: './dashboard-add.component.html'
 })
 export class AddDashboardComponent {
     errorMessage: string;

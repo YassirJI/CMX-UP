@@ -1,4 +1,4 @@
-import { Dashlet } from './dashlet.js';
+import { Dashlet } from './dashlet';
 
 export interface Dashboard {
 

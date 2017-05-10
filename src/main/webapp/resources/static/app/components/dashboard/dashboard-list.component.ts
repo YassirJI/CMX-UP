@@ -1,10 +1,10 @@
 import { Component, OnInit }  from '@angular/core';
 
-import { Dashboard } from './dashboard.js';
-import { DashboardService } from './dashboard.service.js';
+import { Dashboard } from './dashboard';
+import { DashboardService } from './dashboard.service';
 
 @Component({
-    templateUrl: './app/components/dashboard/dashboard-list.component.html'
+    templateUrl: './dashboard-list.component.html'
 })
 export class DashboardListComponent implements OnInit {
     listFilter: string;

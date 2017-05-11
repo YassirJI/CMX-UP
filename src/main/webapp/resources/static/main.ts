@@ -7,7 +7,7 @@ import 'ng2-charts/bundles/ng2-charts.umd.min.js';
 import 'chart.js/dist/Chart.bundle.js';
 // main entry point
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
+import { AppModule } from './app/components/app.module';
 
 
 platformBrowserDynamic().bootstrapModule(AppModule);

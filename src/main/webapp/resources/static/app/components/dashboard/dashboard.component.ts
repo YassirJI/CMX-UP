@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Dashboard } from './dashboard';
-import { DashboardService } from './dashboard.service';
+import { Dashboard } from '../../model/dashboard/dashboard';
+import { DashboardService } from '../../services/dashboard/dashboard.service';
 
 
-import { Dashlet } from './dashlet';
-import { DashletService } from './dashlet.service';
+import { Dashlet } from '../../model/dashboard/dashlet';
+import { DashletService } from '../../services/dashboard/dashlet.service';
 
 @Component({
     selector: 'dashboard',

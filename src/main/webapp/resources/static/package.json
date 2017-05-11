@@ -32,7 +32,8 @@
     "ngx-popover": "^0.0.16",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
-    "zone": "^0.3.4"
+    "zone": "^0.3.4",
+    "zone.js": "^0.8.10"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^4.1.1",

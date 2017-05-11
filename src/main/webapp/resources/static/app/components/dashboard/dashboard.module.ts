@@ -11,13 +11,13 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardListComponent } from './dashboard-list.component';
 import { AddDashboardComponent } from './dashboard-add.component';
 import { AddDashletComponent } from './dashlet-add.component';
-import { RdWidgetComponent } from '../rd-widget/widget.component';
-import { RdWidgetBodyComponent } from '../rd-widget-body/widget-body.component';
-import { RdWidgetHeaderComponent } from '../rd-widget-header/widget-header.component';
-import { RdWidgetFooterComponent } from '../rd-widget-footer/widget-footer.component';
-import { DashboardFilterPipe } from './dashboard-filter.pipe';
-import { DashboardService } from './dashboard.service';
-import { DashletService } from './dashlet.service';
+import { RdWidgetComponent } from '../widgets/rd-widget/widget.component';
+import { RdWidgetBodyComponent } from '../widgets/rd-widget-body/widget-body.component';
+import { RdWidgetHeaderComponent } from '../widgets/rd-widget-header/widget-header.component';
+import { RdWidgetFooterComponent } from '../widgets/rd-widget-footer/widget-footer.component';
+import { DashboardFilterPipe } from '../../services/dashboard/dashboard-filter.pipe';
+import { DashboardService } from '../../services/dashboard/dashboard.service';
+import { DashletService } from '../../services/dashboard/dashlet.service';
 
 @NgModule({
   imports: [

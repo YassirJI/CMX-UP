@@ -9,8 +9,8 @@ module.exports = (envOptions) => {
             main: './main.ts'
         },
         output: {
-            path: path.resolve(__dirname, 'build'),
-            //publicPath: path.resolve(__dirname,'app/assets'),
+            path: path.resolve(__dirname, 'dist'),
+            publicPath: '/',
             filename: '[name].bundle.js'
         },
         resolve: {
@@ -77,7 +77,7 @@ module.exports = (envOptions) => {
             ),
             new HtmlWebpackPlugin({
                 title: 'Dashboard',
-                template: 'index.ejs', // Load a custom template (ejs by default see the FAQ for details) 
+              //  template: 'index.ejs', // Load a custom template (ejs by default see the FAQ for details) 
                 inject: 'body'
             }),
             new webpack.ProvidePlugin({

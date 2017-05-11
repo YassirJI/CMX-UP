@@ -1,5 +1,5 @@
 import {  PipeTransform, Pipe } from '@angular/core';
-import { Dashboard } from './dashboard';
+import { Dashboard } from '../../model/dashboard/dashboard';
 
 @Pipe({
     name: 'dashboardFilter'

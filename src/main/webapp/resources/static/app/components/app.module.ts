@@ -4,19 +4,22 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
+import { SharedModule } from './shared/shared.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { SignModule } from './docsign/sign.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot([], { useHash: true }),
-    DashboardModule
+    DashboardModule,
+    SignModule,
+    SharedModule,
+    RouterModule.forRoot([], { useHash: true })
   ],
   declarations: [
     AppComponent
   ],
-  
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
